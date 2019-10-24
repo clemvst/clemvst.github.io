@@ -1,0 +1,10 @@
+{
+  "en" : {
+    "email_desc_txt" : "School",
+    "lang_txt" : "Languages:",
+    "interest_txt" : "Interests:",
+    "education_txt" : " + Education",
+    "work_experience_txt" : " + Work Experience",
+    "skills_txt" : " + Skills"
+  }
+}
