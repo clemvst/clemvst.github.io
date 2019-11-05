@@ -146,7 +146,7 @@ function load_data_from_json( lang ) {
       html: workexperience_items.join( "" )
     }).appendTo( "#workexperience_container" );
 
-  
+
     skills_categories = Object.keys( data.skills );
     var skills_items = [];
     var index = 0;
@@ -188,5 +188,5 @@ $( document ).ready( function() {
   load_data_from_json( lang );
   update_upper_menu_style_onclick();
   update_upper_menu_style_onscroll();
-  });
+
 });
