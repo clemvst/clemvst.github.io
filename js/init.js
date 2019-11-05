@@ -188,5 +188,4 @@ $( document ).ready( function() {
   load_data_from_json( lang );
   update_upper_menu_style_onclick();
   update_upper_menu_style_onscroll();
-
 });
