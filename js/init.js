@@ -62,6 +62,27 @@ function update_upper_menu_style_onclick( ) {
   });
 }
 
+function set_language( ) {
+  var lang = $.url_param( "lang" );
+
+  if ( !lang ) {
+    window.location.search += $.param( { lang : "en" } );
+    lang = "en";
+  }
+  switch ( lang.toLowerCase() ) {
+  case "en":
+    break;
+  case "fr":
+    break;
+  default:
+    lang = "en";
+    break;
+}
+load_lang_from_json( lang )
+return lang;
+}
+
+
 function load_lang_from_json( lang ) {
   $.getJSON( "data/language.json" , function( data ) {
       $( "#email_desc_txt" ).text(data[lang].email_desc_txt);
@@ -153,8 +174,8 @@ function load_data_from_json( lang ) {
 }
 
 $( document ).ready( function() {
-  load_lang_from_json("en")
-  load_data_from_json("en");
+  var lang = set_language()
+  load_data_from_json(lang);
   update_upper_menu_style_onclick();
   update_upper_menu_style_onscroll();
 });
