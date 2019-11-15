@@ -150,19 +150,19 @@ nav ul li a i {
 }
 
 nav ul li:nth-child(1):hover a, nav ul li:nth-child(2):focus a{
-  background: #42a5f5;
+  background: #4F8BFF;
 }
 
 nav ul li:nth-child(2):hover a, nav ul li:nth-child(2):focus a{
-  background: #fbc02d;
+  background: #48A9E8;
 }
 
 nav ul li:nth-child(3):hover a, nav ul li:nth-child(3):focus a{
-  background: #f44336;
+  background: #5CE9FF;
 }
 
 nav ul li:nth-child(4):hover a, nav ul li:nth-child(4):focus a{
-  background: #4caf50;
+  background: #48E8D2;
 }
 
 nav li.active > nav {
