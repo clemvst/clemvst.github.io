@@ -23,16 +23,16 @@ function update_upper_menu_style_onscroll( ) {
   var __offset = 105;
   $( window ).scroll( function() {
     if ( $( window ).scrollTop() < ( Math.round( $( "#education" ).offset().top ) - __offset )) {
-      document.getElementById( "navigation" ).style.backgroundColor = "#42A5F5";
+      document.getElementById( "navigation" ).style.backgroundColor = "#4F8BFF";
     }
     else if ( $( window ).scrollTop() > ( Math.round( $( "#education").offset().top ) - __offset ) && $( window ).scrollTop() < ( Math.round( $( "#workexperience" ).offset().top ) - __offset )) {
-      document.getElementById( "navigation" ).style.backgroundColor = "#FBC02D";
+      document.getElementById( "navigation" ).style.backgroundColor = "#48A9E8";
     }
     else if ( $( window ).scrollTop() > ( Math.round( $( "#workexperience" ).offset().top ) - __offset ) && $( window ).scrollTop() < ( Math.round( $( "#skills" ).offset().top ) - __offset )) {
-      document.getElementById( "navigation" ).style.backgroundColor = "#F44336";
+      document.getElementById( "navigation" ).style.backgroundColor = "#5CE9FF";
     }
     else if ( $( window ).scrollTop() > ( Math.round( $( "#skills" ).offset().top ) - __offset )) {
-      document.getElementById( "navigation" ).style.backgroundColor = "#4CAF50";
+      document.getElementById( "navigation" ).style.backgroundColor = "#48E8D2";
     }
   });
 }
@@ -42,19 +42,19 @@ function update_upper_menu_style_onclick( ) {
     var page = $( this ).attr( "href" );
     switch ( $(page)[0].id ) {
             case "home":
-              document.getElementById( "navigation" ).style.backgroundColor = "#42A5F5";
+              document.getElementById( "navigation" ).style.backgroundColor = "#4F8BFF";
               break;
             case "education":
-              document.getElementById( "navigation" ).style.backgroundColor = "#FBC02D";
+              document.getElementById( "navigation" ).style.backgroundColor = "#48A9E8";
               break;
             case "workexperience":
-              document.getElementById( "navigation" ).style.backgroundColor = "#F44336";
+              document.getElementById( "navigation" ).style.backgroundColor = "#5CE9FF";
               break;
             case "skills":
-              document.getElementById( "navigation" ).style.backgroundColor = "#4CAF50";
+              document.getElementById( "navigation" ).style.backgroundColor = "#48E8D2";
               break;
             default:
-              document.getElementById( "navigation" ).style.backgroundColor = "#42A5F5";
+              document.getElementById( "navigation" ).style.backgroundColor = "#4FFFB5";
               break;
           }
     $( "html, body" ).animate( { scrollTop: $( page ).offset().top - 100 }, "slow" );
@@ -134,7 +134,7 @@ function load_data_from_json( lang ) {
           skills_items.push( "<div class=\"skillbar clearfix\"><div class=\"skillbar-title\" style=\"background: " + color + ";\"><span>" + key_1 + "</span></div><div class=\"skillbar-bar\" style=\"background: " + color + "; width: " + val_1 + ";\"></div><div class=\"skill-bar-percent\">" + val_1 + "</div></div>" );
         }
         else {
-          tmp_str = "<span class=\"desc\" style=\"color: #42A5F5; font-family: Lato;\">" + val_1;
+          tmp_str = "<span class=\"desc\" style=\"color: #4F8BFF; font-family: Lato;\">" + val_1;
           if ( key_1 == data.skills[val_0].length - 1 ) {
             tmp_str += "</span>";
           } else {
