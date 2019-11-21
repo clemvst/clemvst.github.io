@@ -32,7 +32,7 @@
             "location" : "Paris (France)",
             "date" : "sept 2015 - aug 2017",
             "title" : "Undergraduate program (mathematics, physics, chemistry, computer science)"
-        },
+        }
     ],
     "work_experience" : [
         {
@@ -58,7 +58,7 @@
             "date" : "sept 2015 - june 2019",
             "type_of_contract" : " ",
             "description" : "Mathematics, physics, English and Spanish courses to 2 different students every week."
-        },
+        }
     ],
     "skills" : {
         "programming_language" : {
