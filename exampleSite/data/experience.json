@@ -1,0 +1,26 @@
+[
+    {
+        "job_title" : "Deep Learning Researcher",
+        "company" : "Primaa",
+        "location" : "Paris (FRANCE)",
+        "date" : "july 2019 - jan 2020",
+        "type_of_contract" : "Internship",
+        "description" : "Development of image segmentation and classification algorithms for automatic detection of cancerous cells (Python, keras, Pytorch, OpenCV, SQL)."
+    },
+    {
+        "job_title" : "Factory worker",
+        "company" : "NDE",
+        "location" : "Crulai (FRANCE)",
+        "date" : "jan 2018 - feb 2018",
+        "type_of_contract" : "Internship",
+        "description" : "Process capability analysis and quality monitoring."
+    },
+    {
+        "job_title" : "Private teacher",
+        "company" : " ",
+        "location" : "Nancy (FRANCE)",
+        "date" : "sept 2015 - june 2019",
+        "type_of_contract" : " ",
+        "description" : "Mathematics, physics, English and Spanish courses to 2 different students every week."
+    }
+]
