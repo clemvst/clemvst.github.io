@@ -1,0 +1,32 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: http://clemvst.github.io
+title: Clémence Vast
+email: clemence.vast(at)mines-nancy.org
+author: Clémence Vast
+description: > # "Write an awesome description for your new site here. 
+  Computer science and engineering student. AI and music lover.
+copyright: 'Copyright &copy; 2019 Clémence Vast. All Rights Reserved.'
+credits: 'Credits: Open source and free Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+social:
+  - title: stack-overflow
+    url: https://stackoverflow.com/users/story/11856794
+  - title: github
+    url: https://github.com/clemvst
+  - title: linkedin
+    url: https://www.linkedin.com/in/clemence-vast/
