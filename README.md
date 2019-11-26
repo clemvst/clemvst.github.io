@@ -1,6 +1,6 @@
 # Clemvst website
 
-www.clemvst.github.io
+link to the website : clemvst.github.io
 
 Website with my resume and different projects.
 
