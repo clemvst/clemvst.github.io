@@ -1,42 +1,19 @@
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <ul class="list-inline">
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#education">Education</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#experience">Experience</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted small">{{ site.copyright }}</p>
-            </div>
-            <div class="col-md-4">
-                {{ site.credits }}
-            </div>
-        </div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        &copy; {{ 'now' | date: "%Y" }} {{ site.author }}
+      </div>
+
+      <ul class="footer-social">
+        {% for social in site.social %}
+        <li>
+          <a href="{{ social.url }}" title="{{ social.title }}" target="_blank" rel="noopener">
+            <i class="{{ social.icon }}"></i>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
+  </div>
 </footer>
