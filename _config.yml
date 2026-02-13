@@ -2,31 +2,38 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://clemvst.github.io
-title: Clémence Vast
-email: clemence.vast(at)mines-nancy.org
-author: Clémence Vast
-description: > # "Write an awesome description for your new site here. 
-  Computer science and engineering student. AI and music lover.
-copyright: 'Copyright &copy; 2019 Clémence Vast. All Rights Reserved.'
-credits: 'Credits: Open source and free Bootstrap theme created by <a href="http://startbootstrap.com/">Start Bootstrap</a>.'
+url: https://clemvst.github.io
+baseurl: ""
+title: Clémence Dupont
+email: clemence.dupont(at)mines-nancy.org
+author: Clémence Dupont
+description: >
+  Researcher and engineer in computer science — AI, computer vision, and data science.
 
 # ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
 
-# Build settings
 markdown: kramdown
 permalink: pretty
 
 # ----------------------- #
-#   3rd Party Settings    #
+#     Social Links        #
 # ----------------------- #
 
 social:
-  - title: stack-overflow
-    url: https://stackoverflow.com/users/story/11856794
-  - title: github
+  - title: GitHub
+    icon: fa-brands fa-github
     url: https://github.com/clemvst
-  - title: linkedin
-    url: https://www.linkedin.com/in/clemence-vast/
+  - title: LinkedIn
+    icon: fa-brands fa-linkedin
+    url: https://www.linkedin.com/in/clemence-dupont/
+  - title: Google Scholar
+    icon: fa-solid fa-graduation-cap
+    url: "#"
+
+# Exclude old files from build
+exclude:
+  - README.md
+  - font-awesome-4.1.0
+  - archives

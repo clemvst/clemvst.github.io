@@ -1,20 +1,48 @@
-# Clemvst website
+# Clémence Dupont — Personal Website
 
-link to the website : https://clemvst.github.io
+**Live at:** [clemvst.github.io](https://clemvst.github.io)
 
-Website with my resume and different projects.
+Professional website with pages for education, experience, publications, and projects.
 
+## Stack
 
-# Landing Page Jekyll theme
+Pure static site — **zero build tools, no frameworks, no dependencies to install**.
 
-Jekyll theme based on [landing-page bootstrap theme ](http://startbootstrap.com/templates/landing-page/)
+- HTML / CSS / vanilla JS
+- [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts
+- [Font Awesome 6](https://fontawesome.com/) via CDN
+- Hosted on GitHub Pages
 
-For more Jekyll details, read [documentation](http://jekyllrb.com/).
-This Jekyll theme used [Freelancer Jekyll theme](https://github.com/jeromelachaud/freelancer-theme/) as reference.
+## Structure
 
-## License
-The contents of this repository are licensed under the [Apache
-2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+```
+index.html              ← Home page
+education/index.html    ← Education timeline
+experience/index.html   ← Professional experience
+publications/index.html ← Scientific publications
+projects/index.html     ← Side projects
+css/style.css           ← All styles
+js/main.js              ← Shared nav + footer
+```
 
-## Version
-1.0.1
+## How to Edit
+
+All content is directly in the HTML files — just open, edit, commit, and push.
+Navigation and footer are shared via `js/main.js` so you only update them once.
+
+## Local Preview
+
+Just open `index.html` in your browser, or use any static server:
+
+```bash
+# Python
+python3 -m http.server 8000
+
+# Node
+npx serve .
+```
+
+## Deploy
+
+Push to `main` — GitHub Pages publishes automatically. The `.nojekyll` file
+tells GitHub Pages to skip Jekyll and serve files as-is.
